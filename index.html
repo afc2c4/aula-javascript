@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Front-End Avançado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="alert alert-warning text-center rounded-0 mb-0 border-0" role="alert">
+        ⚡ Corra! A oferta de lançamento expira em: <span id="contadorRegressivo" class="fw-bold ms-1">05:00</span>
+    </div>
+
+    <header class="hero-section text-center py-5 bg-body-tertiary">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-primary">Domine o Front-End</h1>
+            <p class="lead text-secondary">HTML5, CSS3, JavaScript e o fim do pensamento mágico.</p>
+            <p class="small text-muted">Dica: Pressione "D" para Modo Escuro e "L" para Modo Claro.</p>
+            <a href="#contato" class="btn btn-primary btn-lg mt-3">Garantir Minha Vaga</a>
+        </div>
+    </header>
+
+    <section id="contato" class="py-5 bg-body-secondary">
+        <div class="container custom-form-container">
+            <h2 class="text-center mb-4">Ficou com alguma dúvida?</h2>
+            <form id="formContato">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Seu Nome</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Seu E-mail</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                
+                <button type="submit" class="btn btn-success w-100" id="btnEnviar">
+                    <span id="spinnerLoading" class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
+                    <span id="textoBotao">Enviar Pergunta</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="notificacaoToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-success text-white">
+                <strong class="me-auto">Sucesso!</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Sua mensagem foi enviada. Entraremos em contato!
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

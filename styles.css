@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Adicionando uma transição suave para quando o tema for alterado */
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.hero-section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+/* Usando var(--bs-body-bg) nativa do Bootstrap para adaptar ao Dark Mode */
+.custom-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--bs-body-bg); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
